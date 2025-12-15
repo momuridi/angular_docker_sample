@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.handwritten {
+  font-family: 'Caveat', cursive;
+  overflow: hidden;
+  border-right: 0.1em solid #333;
+  white-space: nowrap;
+  display: inline-block;
+  width: 0;
+  animation: typing 4s linear infinite;
+  vertical-align: bottom;
+  line-height: 1.2;
+}
+
+@keyframes typing {
+  0% { width: 0 }
+  40% { width: 5.5em } /* Write */
+  80% { width: 5.5em } /* Wait */
+  90% { width: 0 } /* Delete quickly */
+  100% { width: 0 }
+}
+
+.angular-badge {
+  background-color: #dd0031;
+  color: white;
+  padding: 0.1em 0.4em;
+  border-radius: 0.2em;
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transform: skew(-10deg);
+}
